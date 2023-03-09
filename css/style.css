@@ -344,6 +344,27 @@ figure {
   transform: scale(1.1);
 }
 
+/* #fh5co-header {
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+
+#fh5co-header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #000;
+  animation: spin 3s linear infinite;
+  z-index: -1;
+} */
+
 #fh5co-header .display-tc,
 .fh5co-cover .display-tc {
   display: table-cell !important;
@@ -444,7 +465,12 @@ figure {
   background: var(--main-color);
 }
 #fh5co-features .services-padding {
-  padding: 7em 0;
+  padding: 3.5em 0;
+}
+
+.services-title {
+  text-align: center;
+  margin-top: 3.5em;
 }
 #fh5co-features .feature-left {
   margin-bottom: 40px;
@@ -475,7 +501,7 @@ figure {
   display: table-cell;
   vertical-align: middle;
   height: 60px;
-  color: #dd356e !important;
+  color: var(--main-color) !important;
 }
 #fh5co-features .feature-left .feature-copy {
   float: right;
