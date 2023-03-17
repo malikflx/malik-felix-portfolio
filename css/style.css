@@ -748,7 +748,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #dd356e;
+  color: var(--main-color);
   padding-left: 10px;
   padding-right: 10px;
 }
