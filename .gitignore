@@ -1,0 +1,17 @@
+# Ignore MacOS system files
+.DS_store
+
+# Ignore Images
+./Images
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore text files
+*.txt
+
+# Ignore env variables
+.env
+
+# Ignore SASS config files
+.sass-cache
