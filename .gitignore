@@ -2,7 +2,7 @@
 .DS_store
 
 # Ignore Images
-./Images
+images/
 
 # Ignore node_modules folder
 node_modules
