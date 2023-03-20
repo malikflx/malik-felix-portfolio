@@ -373,6 +373,7 @@ figure {
 .fh5co-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
+  height: 80vh;
 }
 #fh5co-header .display-tc h1,
 #fh5co-header .display-tc h2,
