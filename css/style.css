@@ -595,7 +595,8 @@ figure {
 }
 
 #fh5co-slider {
-  background: #2a528a;
+  background: var(--secondary-color);
+  color: #fff;
 }
 #fh5co-slider .heading h2,
 #fh5co-slider .heading p {
