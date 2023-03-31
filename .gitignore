@@ -12,6 +12,7 @@ node_modules
 
 # Ignore env variables
 .env
+config.js
 
 # Ignore SASS config files
 .sass-cache
