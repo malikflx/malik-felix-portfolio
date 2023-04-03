@@ -13,7 +13,6 @@ const options = {
 fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/content", options)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     document.querySelector(".publication").innerText = data.content;
   })
   .catch((err) => {
@@ -29,3 +28,25 @@ fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/content", options)
 // .then(data => {
 //   data.result
 // })
+fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/", options)
+  .then((response) => response.json())
+  .then((data) => {
+    const publishedDate = new Date(data.published_at);
+    const articleTitle = data.title;
+    const subtitle = data.subtitle;
+
+    document.querySelector(".posted_on").innerText =
+      publishedDate.toLocaleDateString("en-us", {
+        weekday: "long",
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
+
+    document.querySelector(".article-title").innerText = articleTitle;
+
+    document.querySelector(".publication-subtitle").innerText = subtitle;
+  })
+  .catch((err) => {
+    console.log(`error ${err}`);
+  });
