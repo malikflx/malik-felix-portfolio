@@ -18,16 +18,7 @@ fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/content", options)
   .catch((err) => {
     console.log(`error ${err}`);
   });
-// .then((response) => console.log(response))
-// .catch((err) => console.error(err));
 
-// const mediumUrl = "https://medium2.p.rapidapi.com/article/6e419b5cf658/content";
-
-// fetch(mediumUrl)
-// .then(response => response.json())
-// .then(data => {
-//   data.result
-// })
 fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/", options)
   .then((response) => response.json())
   .then((data) => {
