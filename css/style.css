@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
@@ -8,7 +8,7 @@
     url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-slab", serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
@@ -88,7 +88,7 @@ h5,
 h6,
 figure {
   color: #000;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -547,8 +547,9 @@ figure {
 }
 
 .tagline {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-slab", serif;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-features .ipad-bg {
     height: 210px;
