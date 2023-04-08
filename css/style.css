@@ -806,7 +806,7 @@ figure {
   top: 0;
   left: 0;
   right: 0;
-  background: #dd356e;
+  background: var(--main-color);
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 0;
@@ -822,7 +822,7 @@ figure {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #dd356e;
+  color: var(--main-color);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
