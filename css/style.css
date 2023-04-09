@@ -95,17 +95,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #dd356e;
+  background: var(--main-color);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #dd356e;
+  background: var(--main-color);
 }
 
 ::selection {
   color: #fff;
-  background: #dd356e;
+  background: var(--main-color);
 }
 
 .logo {
@@ -1583,7 +1583,7 @@ input[type="text"] {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #dd356e;
+  border-color: var(--main-color);
 }
 
 .row-pb-md {
