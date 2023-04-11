@@ -13,6 +13,20 @@ const options = {
 fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/content", options)
   .then((response) => response.json())
   .then((data) => {
+    const readMoreButton = document.getElementsByClassName("readMore");
+    const readMore = () => {
+      window.location.href = `./articles.html?currentArticle=${data.content}`;
+    };
+
+    if (readMoreButton) {
+      document.querySelector(".readMore").addEventListener("click", readMore);
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const currentArticle = params.get("currentArticle");
+
+    document.getElementById("output").textContent = currentArticle;
+
     document.querySelector(".publication").innerText = data.content;
   })
   .catch((err) => {
