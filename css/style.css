@@ -1613,4 +1613,37 @@ input[type="text"] {
   opacity: 0;
 }
 
+.featured-post {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article {
+  display: flex;
+}
+
+.blog-text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.stuff {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
+
+.stuff li {
+  padding: 2em;
+}
+
+.readMore a {
+  color: var(--main-color);
+}
 /*# sourceMappingURL=style.css.map */
