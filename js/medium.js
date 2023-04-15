@@ -31,6 +31,7 @@ fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/", options)
     const articleTitle = data.title;
     const subtitle = data.subtitle;
     const articleImage = data.image_url;
+    const claps = data.claps;
 
     document.querySelector(".posted_on").innerText =
       publishedDate.toLocaleDateString("en-us", {
@@ -45,6 +46,8 @@ fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/", options)
     document.querySelector(".publication-subtitle").innerText = subtitle;
 
     document.querySelector(".article-image").src = articleImage;
+
+    document.querySelector(".claps").innerText = claps;
   })
   .catch((err) => {
     console.log(`error ${err}`);
