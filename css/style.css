@@ -1618,32 +1618,58 @@ input[type="text"] {
   width: 100%;
   max-width: 100%;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-article {
-  display: flex;
-}
-
-.blog-text {
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.featured-post article {
+  display: flex;
+  max-width: 700px;
+}
+
+.featured-post-heading {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.featured-post-heading .article-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.featured-post .posted_on {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+
+.featured-post .blog-text {
+  flex-direction: column;
   width: 100%;
 }
 
-.stuff {
+.featured-post .publication-subtitle {
+  padding-top: 1em;
+}
+
+.featured-post .stuff {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-decoration: none;
   list-style: none;
 }
 
-.stuff li {
-  padding: 2em;
+.featured-post .stuff li {
+  padding: 1em;
 }
 
-.readMore a {
+.featured-post .readMore a {
   color: var(--main-color);
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  margin: 7em 0;
 }
 /*# sourceMappingURL=style.css.map */

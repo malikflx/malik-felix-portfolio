@@ -10,17 +10,17 @@ const options = {
   },
 };
 
-fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/content", options)
+fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/html", options)
   .then((response) => response.json())
   .then((data) => {
     const readMore = () => {
-      window.location.href = `./articles.html?currentArticle=${data.content}`;
+      window.location.href = `./articles.html?currentArticle=${data.html}`;
     };
 
     const params = new URLSearchParams(window.location.search);
     const currentArticle = params.get("currentArticle");
 
-    document.getElementById("output").textContent = currentArticle;
+    document.getElementById("output").innerHTML = currentArticle;
   })
   .catch((err) => {
     console.log(`error ${err}`);
