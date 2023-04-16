@@ -47,7 +47,7 @@ fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/", options)
 
     document.querySelector(".article-image").src = articleImage;
 
-    document.querySelector(".claps").innerText = claps;
+    document.querySelector(".claps").append(" " + claps);
   })
   .catch((err) => {
     console.log(`error ${err}`);
