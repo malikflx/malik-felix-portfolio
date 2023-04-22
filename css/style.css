@@ -976,6 +976,11 @@ figure {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 20px;
 }
+
+.fh5co-portfolio .portfolio-text p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .fh5co-portfolio .portfolio-text .stuff li {
   list-style: none;
   display: inline-block;
@@ -1680,5 +1685,11 @@ input[type="text"] {
   -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
+}
+
+.fh5co-heading .work-subheading {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
 }
 /*# sourceMappingURL=style.css.map */
