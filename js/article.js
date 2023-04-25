@@ -1,7 +1,5 @@
 import MEDIUM_API_KEY from "../config.js";
 
-// const baseURL = "https://medium2.p.rapidapi.com/article";
-
 const options = {
   method: "GET",
   headers: {
