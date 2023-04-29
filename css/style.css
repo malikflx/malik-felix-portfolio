@@ -116,7 +116,8 @@ figure {
 
 .logo-title {
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+  /* font-weight: 600; */
   color: var(--alt-font-color);
 }
 
@@ -148,11 +149,11 @@ figure {
 } */
 
 .fh5co-nav #fh5co-logo {
-  font-size: 28px;
+  font-size: 36px;
   margin: 0;
   padding: 0;
   /* text-transform: uppercase; */
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Roboto-slab", serif;
 }
 .logo-punctuation {
@@ -176,6 +177,7 @@ figure {
   margin: 0;
   list-style: none;
   display: inline;
+  font-family: "Roboto", sans-serif;
 }
 .fh5co-nav ul li a {
   font-size: 18px;
