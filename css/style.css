@@ -20,6 +20,7 @@
 :root {
   --main-color: #5bc0eb;
   --secondary-color: #1e1e24;
+  --alt-font-color: #828282;
 }
 
 html {
@@ -113,6 +114,12 @@ figure {
   justify-content: space-evenly;
 }
 
+.logo-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: var(--alt-font-color);
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -144,11 +151,11 @@ figure {
   font-size: 28px;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-slab", serif;
 }
-.fh5co-nav #fh5co-logo a span {
+.logo-punctuation {
   color: var(--main-color);
 }
 .fh5co-nav a {
@@ -1678,7 +1685,7 @@ input[type="text"] {
   margin: 7em 0;
 }
 
-.article-image {
+.article .output .blog .article-image {
   width: 100%;
   padding: 1em;
   background: var(--secondary-color);
