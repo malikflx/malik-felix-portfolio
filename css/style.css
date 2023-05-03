@@ -1717,4 +1717,12 @@ input[type="text"] {
 .career-item a {
   color: var(--main-color);
 }
+
+.box-chatter:hover {
+  display: none;
+}
+
+.box-chatter:hover:after {
+  content: "Box Chatter";
+}
 /*# sourceMappingURL=style.css.map */
