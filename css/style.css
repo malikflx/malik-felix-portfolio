@@ -1718,11 +1718,77 @@ input[type="text"] {
   color: var(--main-color);
 }
 
-.box-chatter:hover {
-  display: none;
+.hidden-items .box-chatter-section {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
 }
 
-.box-chatter:hover:after {
-  content: "Box Chatter";
+.hidden-items .box-chatter-section img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  padding: 5px;
+  display: block;
+  /* opacity: 0;
+  transition: opacity 0.3s; */
 }
+
+.hidden-items .box-chatter-section:hover {
+  opacity: 1;
+  z-index: 3;
+}
+
+.hidden-items .image-title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.hidden-items .image-title:hover {
+  opacity: 0;
+  z-index: 0;
+}
+/* .hidden-items .box-chatter img {
+  display: none;
+} */
+
+/* .hidden-items:hover .box-chatter img {
+  display: block;
+} */
+
+/* .hidden-items .box-chatter .hidden-item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+} */
+
+/* .toggle-item {
+  visibility: hidden;
+} */
+
+/* .box-chatter:hover {
+  visibility: hidden;
+} */
+
+/* .box-chatter:hover:after {
+  content: "Box Chatter";
+} */
 /*# sourceMappingURL=style.css.map */
