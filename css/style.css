@@ -263,7 +263,7 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -760,13 +760,13 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: var(--main-color);
   padding-left: 10px;
   padding-right: 10px;
@@ -956,7 +956,7 @@ figure {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
 }
 .fh5co-portfolio > a:hover {
-  webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
 }
@@ -1222,7 +1222,6 @@ input[type="text"] {
   position: absolute;
   right: 0px;
   font-family: "Roboto";
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1728,8 +1727,8 @@ input[type="text"] {
 
 .portfolio-items .image-section img {
   width: 100%;
-  /* height: auto; */
-  height: 30vh;
+  height: auto;
+  /* height: 30vh; */
   padding: 5px;
 }
 
