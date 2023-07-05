@@ -1701,7 +1701,7 @@ input[type="text"] {
   font-weight: 200;
 }
 
-.career-list {
+.info-list {
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -1713,7 +1713,7 @@ input[type="text"] {
   padding-inline-end: 0;
 }
 
-.career-item a {
+.info-item a {
   color: var(--main-color);
 }
 
