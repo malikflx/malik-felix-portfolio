@@ -24,7 +24,7 @@ fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/html", options)
     console.log(`error ${err}`);
   });
 
-fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658/", options)
+fetch("https://medium2.p.rapidapi.com/article/6e419b5cf658", options)
   .then((response) => response.json())
   .then((data) => {
     const publishedDate = new Date(data.published_at);
